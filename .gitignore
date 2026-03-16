@@ -1,0 +1,14 @@
+@"
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+node_modules/
+
+backend/uploads/
+backend/outputs/
+backend/.env
+frontend/build/
+"@ | Set-Content .gitignore
