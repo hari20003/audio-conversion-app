@@ -4,8 +4,7 @@ import tempfile
 from pathlib import Path
 
 from app.utils.language_table import get_model_by_language
-from scripts.import_audio_file_annotations import bulk_import_from_web
-
+from scripts.dataloop_core import bulk_import_from_web
 
 def upload_selected_files_to_dataloop(payload, db):
     """

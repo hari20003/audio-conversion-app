@@ -38,3 +38,7 @@ app.include_router(
 @app.get("/")
 def root():
     return {"message": "Backend running successfully"}
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}

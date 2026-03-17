@@ -4,8 +4,16 @@ import json
 import threading
 import traceback
 from pathlib import Path
-import tkinter as tk
-from tkinter import ttk, filedialog, messagebox
+try:
+    import tkinter as tk
+    from tkinter import filedialog, messagebox, ttk
+    TK_AVAILABLE = True
+except Exception:
+    tk = None
+    filedialog = None
+    messagebox = None
+    ttk = None
+    TK_AVAILABLE = False
 
 import dtlpy as dl
 
